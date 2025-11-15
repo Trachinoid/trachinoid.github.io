@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"trachinoid.github.io","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.26.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="Code File12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910">
+<meta property="og:type" content="website">
+<meta property="og:title" content="powerful gnn master">
+<meta property="og:url" content="https://trachinoid.github.io/docs/GNN/powerful_gnn.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="Code File12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="e:\Blog\source\docs\GNN\powerful_gnn\image-20251115110406074.png">
+<meta property="article:published_time" content="2025-11-15T02:55:06.000Z">
+<meta property="article:modified_time" content="2025-11-15T08:02:35.954Z">
+<meta property="article:author" content="Trachinoid">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="e:\Blog\source\docs\GNN\powerful_gnn\image-20251115110406074.png">
+
+
+<link rel="canonical" href="https://trachinoid.github.io/docs/GNN/powerful_gnn">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://trachinoid.github.io/docs/GNN/powerful_gnn.html","path":"docs/GNN/powerful_gnn.html","title":"powerful gnn master"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>powerful gnn master | Hexo
+</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js","integrity":"sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI="}}</script>
+<script src="/js/third-party/math/mathjax.js" defer></script>
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Hexo</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">1</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">0</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">0</span></a></li><li class="menu-item menu-item-docs"><a href="/docs/" rel="section"><i class="fa fa-book fa-fw"></i>Docs</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Code-File"><span class="nav-number">1.</span> <span class="nav-text">Code File</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Trachinoid</p>
+  <div class="site-description" itemprop="description">Where there is a will, there is a way</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">powerful gnn master
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/GNN/">GNN</a></li>
+            <li>POWERFUL_GNN</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      
+      <div class="post-body">
+          <h2 id="Code-File"><a href="#Code-File" class="headerlink" title="Code File"></a>Code File</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> argparse</span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</span><br><span class="line"><span class="keyword">import</span> torch.optim <span class="keyword">as</span> optim</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> util <span class="keyword">import</span> load_data, separate_data</span><br><span class="line"><span class="keyword">from</span> models.graphcnn <span class="keyword">import</span> GraphCNN</span><br><span class="line"></span><br><span class="line">criterion = nn.CrossEntropyLoss()</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">train</span>(<span class="params">args, model, device, train_graphs, optimizer, epoch</span>):</span><br><span class="line">    model.train()</span><br><span class="line"></span><br><span class="line">    total_iters = args.iters_per_epoch					<span class="comment"># #iteration for each epoch</span></span><br><span class="line">    pbar = tqdm(<span class="built_in">range</span>(total_iters), unit=<span class="string">&#x27;batch&#x27;</span>)		<span class="comment"># set a iterative object</span></span><br><span class="line"></span><br><span class="line">    loss_accum = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> pos <span class="keyword">in</span> pbar:</span><br><span class="line">        <span class="comment"># randomly permute the sequence/range (shuffled along the first index)</span></span><br><span class="line">        <span class="comment"># followed by selecting the first (batch_size) samples</span></span><br><span class="line">        <span class="comment"># = randomly choose (batch_size) samples (or graphs)</span></span><br><span class="line">        selected_idx = np.random.permutation(<span class="built_in">len</span>(train_graphs))[:args.batch_size]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># currently batched graph</span></span><br><span class="line">        batch_graph = [train_graphs[idx] <span class="keyword">for</span> idx <span class="keyword">in</span> selected_idx]</span><br><span class="line">        output = model(batch_graph)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># get the corresponding labels</span></span><br><span class="line">        labels = torch.LongTensor([graph.label <span class="keyword">for</span> graph <span class="keyword">in</span> batch_graph]).to(device)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># compute loss</span></span><br><span class="line">        loss = criterion(output, labels)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># backprop</span></span><br><span class="line">        <span class="keyword">if</span> optimizer <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            optimizer.zero_grad()</span><br><span class="line">            loss.backward()</span><br><span class="line">            optimizer.step()</span><br><span class="line">        </span><br><span class="line">        loss = loss.detach().cpu().numpy()</span><br><span class="line">        loss_accum += loss</span><br><span class="line"></span><br><span class="line">        <span class="comment"># report</span></span><br><span class="line">        pbar.set_description(<span class="string">&#x27;epoch: %d&#x27;</span> % (epoch))</span><br><span class="line"></span><br><span class="line">    average_loss = loss_accum/total_iters</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;loss training: %f&quot;</span> % (average_loss))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> average_loss</span><br><span class="line"></span><br><span class="line"><span class="comment">### pass data to model with minibatch during testing to avoid memory overflow (does not perform backpropagation)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">pass_data_iteratively</span>(<span class="params">model, graphs, minibatch_size = <span class="number">64</span></span>):</span><br><span class="line">    model.<span class="built_in">eval</span>()</span><br><span class="line">    output = []</span><br><span class="line">    idx = np.arange(<span class="built_in">len</span>(graphs))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(graphs), minibatch_size):</span><br><span class="line">        sampled_idx = idx[i:i+minibatch_size]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(sampled_idx) == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        output.append(model([graphs[j] <span class="keyword">for</span> j <span class="keyword">in</span> sampled_idx]).detach())		</span><br><span class="line">        <span class="comment"># detech(): extract the corresponding trnsor leaving no gradients</span></span><br><span class="line">    <span class="keyword">return</span> torch.cat(output, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test</span>(<span class="params">args, model, device, train_graphs, test_graphs, epoch</span>):</span><br><span class="line">    model.<span class="built_in">eval</span>()</span><br><span class="line"></span><br><span class="line">    output = pass_data_iteratively(model, train_graphs)</span><br><span class="line">    pred = output.<span class="built_in">max</span>(<span class="number">1</span>, keepdim=<span class="literal">True</span>)[<span class="number">1</span>]</span><br><span class="line">    labels = torch.LongTensor([graph.label <span class="keyword">for</span> graph <span class="keyword">in</span> train_graphs]).to(device)</span><br><span class="line">    correct = pred.eq(labels.view_as(pred)).<span class="built_in">sum</span>().cpu().item()</span><br><span class="line">    acc_train = correct / <span class="built_in">float</span>(<span class="built_in">len</span>(train_graphs))</span><br><span class="line"></span><br><span class="line">    output = pass_data_iteratively(model, test_graphs)</span><br><span class="line">    pred = output.<span class="built_in">max</span>(<span class="number">1</span>, keepdim=<span class="literal">True</span>)[<span class="number">1</span>]</span><br><span class="line">    labels = torch.LongTensor([graph.label <span class="keyword">for</span> graph <span class="keyword">in</span> test_graphs]).to(device)</span><br><span class="line">    correct = pred.eq(labels.view_as(pred)).<span class="built_in">sum</span>().cpu().item()</span><br><span class="line">    acc_test = correct / <span class="built_in">float</span>(<span class="built_in">len</span>(test_graphs))</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;accuracy train: %f test: %f&quot;</span> % (acc_train, acc_test))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> acc_train, acc_test</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    <span class="comment"># Training settings</span></span><br><span class="line">    <span class="comment"># Note: Hyper-parameters need to be tuned in order to obtain results reported in the paper.</span></span><br><span class="line">    parser = argparse.ArgumentParser(description=<span class="string">&#x27;PyTorch graph convolutional neural net for whole-graph classification&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--dataset&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">str</span>, default=<span class="string">&quot;MUTAG&quot;</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;name of dataset (default: MUTAG)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--device&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">0</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;which gpu to use if any (default: 0)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--batch_size&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">32</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;input batch size for training (default: 32)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--iters_per_epoch&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">50</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of iterations per each epoch (default: 50)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--epochs&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">350</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of epochs to train (default: 350)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--lr&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">float</span>, default=<span class="number">0.01</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;learning rate (default: 0.01)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--seed&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">0</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;random seed for splitting the dataset into 10 (default: 0)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--fold_idx&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">0</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;the index of fold in 10-fold validation. Should be less then 10.&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--num_layers&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">5</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of layers INCLUDING the input one (default: 5)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--num_mlp_layers&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">2</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of layers for MLP EXCLUDING the input one (default: 2). 1 means linear model.&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--hidden_dim&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">64</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of hidden units (default: 64)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--final_dropout&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">float</span>, default=<span class="number">0.5</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;final layer dropout (default: 0.5)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--graph_pooling_type&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">str</span>, default=<span class="string">&quot;sum&quot;</span>, choices=[<span class="string">&quot;sum&quot;</span>, <span class="string">&quot;average&quot;</span>],</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;Pooling for over nodes in a graph: sum or average&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--neighbor_pooling_type&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">str</span>, default=<span class="string">&quot;sum&quot;</span>, choices=[<span class="string">&quot;sum&quot;</span>, <span class="string">&quot;average&quot;</span>, <span class="string">&quot;max&quot;</span>],</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;Pooling for over neighboring nodes: sum, average or max&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--learn_eps&#x27;</span>, action=<span class="string">&quot;store_true&quot;</span>,</span><br><span class="line">                                        <span class="built_in">help</span>=<span class="string">&#x27;Whether to learn the epsilon weighting for the center nodes. Does not affect training accuracy though.&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--degree_as_tag&#x27;</span>, action=<span class="string">&quot;store_true&quot;</span>,</span><br><span class="line">    					<span class="built_in">help</span>=<span class="string">&#x27;let the input node features be the degree of nodes (heuristics for unlabeled graph)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--filename&#x27;</span>, <span class="built_in">type</span> = <span class="built_in">str</span>, default = <span class="string">&quot;&quot;</span>,</span><br><span class="line">                                        <span class="built_in">help</span>=<span class="string">&#x27;output file&#x27;</span>)</span><br><span class="line">    args = parser.parse_args()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#set up seeds and gpu device</span></span><br><span class="line">    torch.manual_seed(<span class="number">0</span>)</span><br><span class="line">    np.random.seed(<span class="number">0</span>)    </span><br><span class="line">    device = torch.device(<span class="string">&quot;cuda:&quot;</span> + <span class="built_in">str</span>(args.device)) <span class="keyword">if</span> torch.cuda.is_available() <span class="keyword">else</span> torch.device(<span class="string">&quot;cpu&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> torch.cuda.is_available():</span><br><span class="line">        torch.cuda.manual_seed_all(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    graphs, num_classes = load_data(args.dataset, args.degree_as_tag)</span><br><span class="line"></span><br><span class="line">    <span class="comment">##10-fold cross validation. Conduct an experiment on the fold specified by args.fold_idx.</span></span><br><span class="line">    train_graphs, test_graphs = separate_data(graphs, args.seed, args.fold_idx)</span><br><span class="line"></span><br><span class="line">    model = GraphCNN(args.num_layers, args.num_mlp_layers, train_graphs[<span class="number">0</span>].node_features.shape[<span class="number">1</span>], args.hidden_dim, num_classes, args.final_dropout, args.learn_eps, args.graph_pooling_type, args.neighbor_pooling_type, device).to(device)</span><br><span class="line"></span><br><span class="line">    optimizer = optim.Adam(model.parameters(), lr=args.lr)</span><br><span class="line">    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=<span class="number">50</span>, gamma=<span class="number">0.5</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, args.epochs + <span class="number">1</span>):</span><br><span class="line">        scheduler.step()</span><br><span class="line"></span><br><span class="line">        avg_loss = train(args, model, device, train_graphs, optimizer, epoch)</span><br><span class="line">        acc_train, acc_test = test(args, model, device, train_graphs, test_graphs, epoch)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> args.filename == <span class="string">&quot;&quot;</span>:</span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(args.filename, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                f.write(<span class="string">&quot;%f %f %f&quot;</span> % (avg_loss, acc_train, acc_test))</span><br><span class="line">                f.write(<span class="string">&quot;\n&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(model.eps)</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p><img src="E:\Blog\source\docs\GNN\powerful_gnn\image-20251115110406074.png" alt="Fig. 1. Information for each epoch"></p>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/docs/">DOCS</a></li>
+            <li><a href="/docs/GNN/">GNN</a></li>
+            <li>POWERFUL_GNN</li>
+  </ul>
+
+    
+    
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Trachinoid</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>

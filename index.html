@@ -22,9 +22,9 @@
 
     <meta name="description" content="Where there is a will, there is a way">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
+<meta property="og:title" content="Trachinoid&#39;s Blog">
 <meta property="og:url" content="https://trachinoid.github.io/index.html">
-<meta property="og:site_name" content="Hexo">
+<meta property="og:site_name" content="Trachinoid&#39;s Blog">
 <meta property="og:description" content="Where there is a will, there is a way">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Trachinoid">
@@ -37,7 +37,7 @@
 <script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hexo</title>
+<title>Trachinoid's Blog</title>
   
 
 
@@ -95,7 +95,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">Trachinoid's Blog</h1>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -109,7 +109,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">3</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">2</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">1</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">2</span></a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">1</span></a></li>
   </ul>
 </nav>
 
@@ -146,7 +146,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">1</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -183,7 +183,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://trachinoid.github.io/2025/11/15/AI/GNN/powerful-graph-neural-networks/">
+    <link itemprop="mainEntityOfPage" href="https://trachinoid.github.io/2025/11/15/AI/GNN/GNN_expressive_power_init/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -191,17 +191,17 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="Trachinoid's Blog">
       <meta itemprop="description" content="Where there is a will, there is a way">
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Hexo">
+      <meta itemprop="name" content=" | Trachinoid's Blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/11/15/AI/GNN/powerful-graph-neural-networks/" class="post-title-link" itemprop="url">powerful graph neural networks</a>
+          <a href="/2025/11/15/AI/GNN/GNN_expressive_power_init/" class="post-title-link" itemprop="url">powerful graph neural networks</a>
         </h2>
 
         <div class="post-meta-container">
@@ -211,9 +211,15 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
-      
 
-      <time title="Created: 2025-11-15 18:53:31 / Modified: 23:53:08" itemprop="dateCreated datePublished" datetime="2025-11-15T18:53:31+08:00">2025-11-15</time>
+      <time title="Created: 2025-11-15 18:53:31" itemprop="dateCreated datePublished" datetime="2025-11-15T18:53:31+08:00">2025-11-15</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2025-11-24 21:12:38" itemprop="dateModified" datetime="2025-11-24T21:12:38+08:00">2025-11-24</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -278,153 +284,75 @@ h_v^{(k)}=\phi\left( h_v^{(k-1)},f\left( h_u^{k-1}:u\in\mathcal N(v) \right) \ri
 </li>
 </ul>
 <p><em>A hint for proof: bijection between images.</em></p>
+<p><strong><em>Lemma 2 (Countability of Range of GNN)</em></strong>: Assume the input feature space $\mathcal X$ is <strong>countable</strong>. Let $g^{(k)}$ be the function parameterized by a GNN’s $k$-th layer for $k=1,\dots,L$, where $g^{(1)}$ is defined on multisets $X\subset \mathcal X$ of <strong>bounded size</strong>. The range of $g^{(k)}$, i.e. the space of node hidden features $h_v^{(k)}$, is also <strong>countable</strong> for all $k=1,\dots,L$.</p>
+<p><strong><em>Remark 4</em></strong>: In contrast to <strong>WL test</strong> where features are represented by <em>one-hot embeddings</em>, <strong>GNNs</strong> can further capture <em>the similarity of graph structures</em>. The similarity is <em>beneficial</em> to the <strong>sparse subtrees</strong> or <strong>noisy edges and node features</strong>.</p>
+<h2 id="Graph-Isomorphism-Network-GIN"><a href="#Graph-Isomorphism-Network-GIN" class="headerlink" title="Graph Isomorphism Network (GIN)"></a>Graph Isomorphism Network (GIN)</h2><p><strong><em>Lemma 3 (Decomposition Uniqueness)</em></strong>: Assume $\mathcal X$ is <strong>countable</strong>. There exists a function $f:\mathcal X\rightarrow \mathbb R^n$ so that $h(X)=\sum_{x\in X}f(x)$ is <strong>unique</strong> for each multiset $X\subset \mathcal X$ of <strong>bounded size</strong>. Moreover, <strong>any multiset function</strong> $g$ can be decomposed as $g(X)=\phi\left(\sum_{x\in X}f(x)\right)$.</p>
+<p><strong><em>Corollary 1</em></strong> - Assume $\mathcal X$ is countable. There exists $f:\mathcal X\rightarrow \mathbb R^n$ so that for $\forall$ <strong>irrational number</strong> $\epsilon$ such that $h(c,X)=(1+\epsilon)f(c)+\sum_{x\in\mathcal X}f(x)$ is <strong>unique</strong>. Moreover, any function over the pair $(c,X)$ can be <strong>decomposed</strong> as $g(c,X)=\varphi((1+\epsilon)f(c)+\sum_{x\in\mathcal X}f(x))$ for some function $\varphi$.</p>
+<ul>
+<li><p>Based on <strong><em>Universal Function Theorem</em></strong>, use <strong><em>MLPs</em></strong> to learn $f$ and $\varphi$. Specifically, $f^{(k+1)}\circ\varphi^{(k)}$ is <strong>modeled</strong> with one <strong>MLP</strong>.</p>
+</li>
+<li><p>For the <strong>first iteration</strong>, the <strong>MLP</strong> is <strong>not necessary</strong> before summation because <strong><em>the summation of one-hot encoding is injective</em></strong>.</p>
+</li>
+<li><p>Therefore, <strong>GIN</strong> updates the node representation as</p>
+<script type="math/tex; mode=display">
+h_v^{(k)}=\text{MLP}^{(k)}\left( (1+\epsilon^{(k)})h_v^{(k-1)}+\sum_{u\in\mathcal N(v)}h_u^{(k-1)} \right),</script><p>where $\epsilon$ can be <strong>learnable</strong> or <strong>fixed</strong>.</p>
+</li>
+</ul>
+<p><strong><em>Remark 4</em></strong>: The role of <code>MLP</code> is played in the combination of <strong>concatenations (SUM AGGREGATOR)</strong> and <strong>updates</strong>. </p>
+<ul>
+<li><strong><em>Note</em></strong>: there might be <strong><em>many other powerful GNNs (Not just SUM AGGREGATOR-based ones)</em></strong>.</li>
+</ul>
+<h3 id="GIN-Readout-Function"><a href="#GIN-Readout-Function" class="headerlink" title="GIN Readout Function"></a>GIN Readout Function</h3><ul>
+<li>A <strong>sufficient number</strong> of layers can guarantee better <strong>discriminative power</strong>. <code>[Fitting better]</code></li>
+<li>Features from <strong>earlier layers</strong> may <strong>generalize better</strong>. <code>[Generalizing better]</code></li>
+</ul>
+<script type="math/tex; mode=display">
+h_G=\mathrm{CONCAT}\left(\mathrm{READOUT}\left( h_v^{(k)}:v\in G \right)\Big|k=0,\dots,K\right).</script><h2 id="Less-Powerful-GNNs"><a href="#Less-Powerful-GNNs" class="headerlink" title="Less Powerful GNNs"></a>Less Powerful GNNs</h2><h3 id="1-layer-perceptron"><a href="#1-layer-perceptron" class="headerlink" title="1-layer perceptron"></a>1-layer perceptron</h3><p><strong><em>Lemma 4 (Breakup of Injectivity)</em></strong> - There $\exists X_1\neq X_2$ that are <strong>finite multisets</strong> so that for any <strong>linear mapping</strong> $W$ $\sum_{x_1\in X_1}\mathrm{ReLU}(Wx_1)=\sum_{x_2\in X_2}\mathrm{ReLU}(Wx_2)$ holds. </p>
+<p>The breakup results from <strong>the lack of universal approximation</strong> which is possessed by MLPs.</p>
+<ul>
+<li>Even if it can <strong>distinguish different graphs (Injectivity)</strong>, it might not be able to detect the <strong>similarity</strong> between them.</li>
+</ul>
+<h3 id="Mean-and-max-pooling"><a href="#Mean-and-max-pooling" class="headerlink" title="Mean- and max-pooling"></a>Mean- and max-pooling</h3><ul>
+<li><strong><em>Mean (distribution)</em></strong>, <strong><em>Max (representative)</em></strong></li>
+</ul>
+<p><strong><em>Corollary 2 (Distribution of mean-pooling)</em></strong> - Assume $\mathcal X$ is countable. There $\exists f:\mathcal X\rightarrow \mathbb R^n$ so that for $h(X)=\frac{1}{|X|}\sum_{x\in\mathcal X}f(x)$, $f(X_1)=f(X_2)$ if and only if $X_1$ and $X_2$ have <strong>the same distribution</strong>. That is, $\exists (S,m_0)$ such that $X_1=(S,k_1m_0)$ and $X_2=(S,k_2m_0)$ for some $k_1,k_2\in\mathbb N_+$.</p>
+<p><strong><em>Corollary 3 (Underlying set of max-pooling)</em></strong> - Assume $\mathcal X$ is countable. Then $\exists f:\mathcal X\rightarrow \mathbb R^n$ so that for $h(X)=\max_{x\in X}f(x)$, $h(X_1)=h(X_2)$ if and only if $X_1$ and $X_2$ have the <strong>same underlying set</strong>.`</p>
+<h2 id="Some-doubts-that-I-have-met-with-Answers"><a href="#Some-doubts-that-I-have-met-with-Answers" class="headerlink" title="Some doubts that I have met [with Answers]"></a>Some doubts that I have met <code>[with Answers]</code></h2><ul>
+<li><p><strong>Q1</strong> - What is the term <strong>“well-defined”</strong> defined?</p>
+<ul>
+<li><strong>A1</strong> - A function is <strong><em>well-defined</em></strong>, meaning it is <em>not ambiguous</em> so that each element of its domain is corresponding to <strong>a unique value</strong>.</li>
+</ul>
+</li>
+<li><p><strong>Q2</strong> - What is the difference between <strong>bijection</strong> and <strong>isomorphism</strong>?</p>
+<ul>
+<li><strong>A2</strong> - There are <strong>two cases</strong> that should be considered. When it comes to <strong>two sets</strong>, without <strong>structures (operations)</strong>, they are <strong>identical</strong>. However, <strong><em>the isomorphism is usually used for representing the preservation of structures</em></strong>. For example, two groups $A$ and $B$ are <strong><em>isomorphic</em></strong> so that $\exists g:A\rightarrow B$ such that $g(a_1)g(a_2)=g(a_1a_2)$ where $a_1,a_2\in A$.</li>
+</ul>
+</li>
+<li><p><strong>Q3</strong> - How does <strong>mean aggregator</strong> work for functions defined on <strong>sets</strong> rather than on multisets?</p>
+<ul>
+<li><strong>A3</strong> - Similar to the construction introduced in this paper, we can prove $\exists f:\mathcal X\rightarrow \mathbb R^d$ so that $\forall X\subset\mathcal X$, $h(X)=\frac{1}{|X|}\sum_{x\in X}f(x)$ is <strong>unique</strong>. Let us consider $f(x)=N^{-Z(x)}$ where $Z:\mathcal X\rightarrow \mathbb Z_+$ and $N\in\mathbb Z_+$ with <strong><em>sufficiently large</em></strong> $N$. For $X_1\neq X_2$, assume $h(X_1)=h(X_2)$. Thus,<script type="math/tex; mode=display">
+\frac{1}{|X_1|}\sum_{x_1\in X_1}N^{-Z(x_1)}=\frac{1}{|X_2|}\sum_{x_2\in X_2}N^{-Z(x_2)}.</script>This equation can be rewritten by $X_0=X_1\cup X_2$ as<script type="math/tex; mode=display">
+\begin{align}
+&\frac{1}{|X_1|}\sum_{x_1\in X_0}\mathbb 1(x_1\in X_1)N^{-Z(x_1)}=\frac{1}{|X_2|}\sum_{x_2\in X_0}\mathbb 1(x_2\in X_2)N^{-Z(x_2)}\\
+\Rightarrow &\sum_{x\in X_0}\left( \frac{\mathbb 1(x\in X_1)}{|X_1|}-\frac{\mathbb 1(x\in X_2)}{|X_2|}\right) N^{-Z(x)}=0.
+\end{align}</script>Then, $\frac{\mathbb 1(x_1\in X_1)}{|X_1|}-\frac{\mathbb 1(x_2\in X_2)}{|X_2|}\in\left\{\frac{1}{|X_1|},-\frac{1}{|X_2|},\frac{1}{|X_1|}-\frac{1}{|X_2|} \right\} \subset \left[ -\frac{1}{|X_2|}N^{-Z(x)},\frac{1}{|X_1|}N^{-Z(x)} \right]$. The <strong>sufficiently large</strong> $N$ <font color=yellow>guarantees</font> that $\frac{\mathbb 1(x\in X_1)}{|X_1|}-\frac{\mathbb 1(x\in X_2)}{|X_2|}=0$, implying $\mathbb 1(x\in X_1)=\mathbb 1(x\in X_2)$ and $|X_1|=|X_2|$. Therefore, $X_1=X_2$, leading to the <strong>injectivity</strong>. But it is not for multisets.</li>
+</ul>
+</li>
+<li><p><strong>Q4</strong> - What types of functions are called <strong><em>universal</em></strong>?</p>
+<ul>
+<li><strong>A4</strong> - A <strong>universal function</strong> is a function that can <strong><em>imitate</em></strong> all other functions.</li>
+</ul>
+</li>
+<li><strong>Q5</strong> - Why the features of the <strong>earlier iterations</strong> may <strong>generalize</strong> better?<ul>
+<li><strong>A5</strong> - The deeper iterations might lead to <strong>overfitting</strong> such that the <strong>inherent discrimination</strong> cannot be distinguished really well. Therefore, <strong>including features from earlier iterations</strong> can improve the <strong>generalization</strong> performance.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Future-work"><a href="#Future-work" class="headerlink" title="Future work"></a>Future work</h2><ul>
+<li>the measure of <strong>closeness</strong> between two embeddings of two graphs.</li>
+<li>Analysis in terms of <strong>expressive power</strong> for other GNNs.</li>
+</ul>
 <h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://trachinoid.github.io/2025/11/15/AI/GNN/powerful_gnn/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Trachinoid">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-      <meta itemprop="description" content="Where there is a will, there is a way">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Hexo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/11/15/AI/GNN/powerful_gnn/" class="post-title-link" itemprop="url">powerful gnn master</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-      
-
-      <time title="Created: 2025-11-15 10:55:06 / Modified: 16:02:35" itemprop="dateCreated datePublished" datetime="2025-11-15T10:55:06+08:00">2025-11-15</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Code-File"><a href="#Code-File" class="headerlink" title="Code File"></a>Code File</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> argparse</span><br><span class="line"><span class="keyword">import</span> torch</span><br><span class="line"><span class="keyword">import</span> torch.nn <span class="keyword">as</span> nn</span><br><span class="line"><span class="keyword">import</span> torch.nn.functional <span class="keyword">as</span> F</span><br><span class="line"><span class="keyword">import</span> torch.optim <span class="keyword">as</span> optim</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> tqdm <span class="keyword">import</span> tqdm</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> util <span class="keyword">import</span> load_data, separate_data</span><br><span class="line"><span class="keyword">from</span> models.graphcnn <span class="keyword">import</span> GraphCNN</span><br><span class="line"></span><br><span class="line">criterion = nn.CrossEntropyLoss()</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">train</span>(<span class="params">args, model, device, train_graphs, optimizer, epoch</span>):</span><br><span class="line">    model.train()</span><br><span class="line"></span><br><span class="line">    total_iters = args.iters_per_epoch					<span class="comment"># #iteration for each epoch</span></span><br><span class="line">    pbar = tqdm(<span class="built_in">range</span>(total_iters), unit=<span class="string">&#x27;batch&#x27;</span>)		<span class="comment"># set a iterative object</span></span><br><span class="line"></span><br><span class="line">    loss_accum = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> pos <span class="keyword">in</span> pbar:</span><br><span class="line">        <span class="comment"># randomly permute the sequence/range (shuffled along the first index)</span></span><br><span class="line">        <span class="comment"># followed by selecting the first (batch_size) samples</span></span><br><span class="line">        <span class="comment"># = randomly choose (batch_size) samples (or graphs)</span></span><br><span class="line">        selected_idx = np.random.permutation(<span class="built_in">len</span>(train_graphs))[:args.batch_size]</span><br><span class="line"></span><br><span class="line">        <span class="comment"># currently batched graph</span></span><br><span class="line">        batch_graph = [train_graphs[idx] <span class="keyword">for</span> idx <span class="keyword">in</span> selected_idx]</span><br><span class="line">        output = model(batch_graph)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># get the corresponding labels</span></span><br><span class="line">        labels = torch.LongTensor([graph.label <span class="keyword">for</span> graph <span class="keyword">in</span> batch_graph]).to(device)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># compute loss</span></span><br><span class="line">        loss = criterion(output, labels)</span><br><span class="line"></span><br><span class="line">        <span class="comment"># backprop</span></span><br><span class="line">        <span class="keyword">if</span> optimizer <span class="keyword">is</span> <span class="keyword">not</span> <span class="literal">None</span>:</span><br><span class="line">            optimizer.zero_grad()</span><br><span class="line">            loss.backward()</span><br><span class="line">            optimizer.step()</span><br><span class="line">        </span><br><span class="line">        loss = loss.detach().cpu().numpy()</span><br><span class="line">        loss_accum += loss</span><br><span class="line"></span><br><span class="line">        <span class="comment"># report</span></span><br><span class="line">        pbar.set_description(<span class="string">&#x27;epoch: %d&#x27;</span> % (epoch))</span><br><span class="line"></span><br><span class="line">    average_loss = loss_accum/total_iters</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;loss training: %f&quot;</span> % (average_loss))</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> average_loss</span><br><span class="line"></span><br><span class="line"><span class="comment">### pass data to model with minibatch during testing to avoid memory overflow (does not perform backpropagation)</span></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">pass_data_iteratively</span>(<span class="params">model, graphs, minibatch_size = <span class="number">64</span></span>):</span><br><span class="line">    model.<span class="built_in">eval</span>()</span><br><span class="line">    output = []</span><br><span class="line">    idx = np.arange(<span class="built_in">len</span>(graphs))</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, <span class="built_in">len</span>(graphs), minibatch_size):</span><br><span class="line">        sampled_idx = idx[i:i+minibatch_size]</span><br><span class="line">        <span class="keyword">if</span> <span class="built_in">len</span>(sampled_idx) == <span class="number">0</span>:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        output.append(model([graphs[j] <span class="keyword">for</span> j <span class="keyword">in</span> sampled_idx]).detach())		</span><br><span class="line">        <span class="comment"># detech(): extract the corresponding trnsor leaving no gradients</span></span><br><span class="line">    <span class="keyword">return</span> torch.cat(output, <span class="number">0</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">test</span>(<span class="params">args, model, device, train_graphs, test_graphs, epoch</span>):</span><br><span class="line">    model.<span class="built_in">eval</span>()</span><br><span class="line"></span><br><span class="line">    output = pass_data_iteratively(model, train_graphs)</span><br><span class="line">    pred = output.<span class="built_in">max</span>(<span class="number">1</span>, keepdim=<span class="literal">True</span>)[<span class="number">1</span>]</span><br><span class="line">    labels = torch.LongTensor([graph.label <span class="keyword">for</span> graph <span class="keyword">in</span> train_graphs]).to(device)</span><br><span class="line">    correct = pred.eq(labels.view_as(pred)).<span class="built_in">sum</span>().cpu().item()</span><br><span class="line">    acc_train = correct / <span class="built_in">float</span>(<span class="built_in">len</span>(train_graphs))</span><br><span class="line"></span><br><span class="line">    output = pass_data_iteratively(model, test_graphs)</span><br><span class="line">    pred = output.<span class="built_in">max</span>(<span class="number">1</span>, keepdim=<span class="literal">True</span>)[<span class="number">1</span>]</span><br><span class="line">    labels = torch.LongTensor([graph.label <span class="keyword">for</span> graph <span class="keyword">in</span> test_graphs]).to(device)</span><br><span class="line">    correct = pred.eq(labels.view_as(pred)).<span class="built_in">sum</span>().cpu().item()</span><br><span class="line">    acc_test = correct / <span class="built_in">float</span>(<span class="built_in">len</span>(test_graphs))</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;accuracy train: %f test: %f&quot;</span> % (acc_train, acc_test))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> acc_train, acc_test</span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">main</span>():</span><br><span class="line">    <span class="comment"># Training settings</span></span><br><span class="line">    <span class="comment"># Note: Hyper-parameters need to be tuned in order to obtain results reported in the paper.</span></span><br><span class="line">    parser = argparse.ArgumentParser(description=<span class="string">&#x27;PyTorch graph convolutional neural net for whole-graph classification&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--dataset&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">str</span>, default=<span class="string">&quot;MUTAG&quot;</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;name of dataset (default: MUTAG)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--device&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">0</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;which gpu to use if any (default: 0)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--batch_size&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">32</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;input batch size for training (default: 32)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--iters_per_epoch&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">50</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of iterations per each epoch (default: 50)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--epochs&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">350</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of epochs to train (default: 350)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--lr&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">float</span>, default=<span class="number">0.01</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;learning rate (default: 0.01)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--seed&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">0</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;random seed for splitting the dataset into 10 (default: 0)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--fold_idx&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">0</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;the index of fold in 10-fold validation. Should be less then 10.&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--num_layers&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">5</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of layers INCLUDING the input one (default: 5)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--num_mlp_layers&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">2</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of layers for MLP EXCLUDING the input one (default: 2). 1 means linear model.&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--hidden_dim&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">int</span>, default=<span class="number">64</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;number of hidden units (default: 64)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--final_dropout&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">float</span>, default=<span class="number">0.5</span>,</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;final layer dropout (default: 0.5)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--graph_pooling_type&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">str</span>, default=<span class="string">&quot;sum&quot;</span>, choices=[<span class="string">&quot;sum&quot;</span>, <span class="string">&quot;average&quot;</span>],</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;Pooling for over nodes in a graph: sum or average&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--neighbor_pooling_type&#x27;</span>, <span class="built_in">type</span>=<span class="built_in">str</span>, default=<span class="string">&quot;sum&quot;</span>, choices=[<span class="string">&quot;sum&quot;</span>, <span class="string">&quot;average&quot;</span>, <span class="string">&quot;max&quot;</span>],</span><br><span class="line">                        <span class="built_in">help</span>=<span class="string">&#x27;Pooling for over neighboring nodes: sum, average or max&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--learn_eps&#x27;</span>, action=<span class="string">&quot;store_true&quot;</span>,</span><br><span class="line">                                        <span class="built_in">help</span>=<span class="string">&#x27;Whether to learn the epsilon weighting for the center nodes. Does not affect training accuracy though.&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--degree_as_tag&#x27;</span>, action=<span class="string">&quot;store_true&quot;</span>,</span><br><span class="line">    					<span class="built_in">help</span>=<span class="string">&#x27;let the input node features be the degree of nodes (heuristics for unlabeled graph)&#x27;</span>)</span><br><span class="line">    parser.add_argument(<span class="string">&#x27;--filename&#x27;</span>, <span class="built_in">type</span> = <span class="built_in">str</span>, default = <span class="string">&quot;&quot;</span>,</span><br><span class="line">                                        <span class="built_in">help</span>=<span class="string">&#x27;output file&#x27;</span>)</span><br><span class="line">    args = parser.parse_args()</span><br><span class="line"></span><br><span class="line">    <span class="comment">#set up seeds and gpu device</span></span><br><span class="line">    torch.manual_seed(<span class="number">0</span>)</span><br><span class="line">    np.random.seed(<span class="number">0</span>)    </span><br><span class="line">    device = torch.device(<span class="string">&quot;cuda:&quot;</span> + <span class="built_in">str</span>(args.device)) <span class="keyword">if</span> torch.cuda.is_available() <span class="keyword">else</span> torch.device(<span class="string">&quot;cpu&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> torch.cuda.is_available():</span><br><span class="line">        torch.cuda.manual_seed_all(<span class="number">0</span>)</span><br><span class="line"></span><br><span class="line">    graphs, num_classes = load_data(args.dataset, args.degree_as_tag)</span><br><span class="line"></span><br><span class="line">    <span class="comment">##10-fold cross validation. Conduct an experiment on the fold specified by args.fold_idx.</span></span><br><span class="line">    train_graphs, test_graphs = separate_data(graphs, args.seed, args.fold_idx)</span><br><span class="line"></span><br><span class="line">    model = GraphCNN(args.num_layers, args.num_mlp_layers, train_graphs[<span class="number">0</span>].node_features.shape[<span class="number">1</span>], args.hidden_dim, num_classes, args.final_dropout, args.learn_eps, args.graph_pooling_type, args.neighbor_pooling_type, device).to(device)</span><br><span class="line"></span><br><span class="line">    optimizer = optim.Adam(model.parameters(), lr=args.lr)</span><br><span class="line">    scheduler = optim.lr_scheduler.StepLR(optimizer, step_size=<span class="number">50</span>, gamma=<span class="number">0.5</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> epoch <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>, args.epochs + <span class="number">1</span>):</span><br><span class="line">        scheduler.step()</span><br><span class="line"></span><br><span class="line">        avg_loss = train(args, model, device, train_graphs, optimizer, epoch)</span><br><span class="line">        acc_train, acc_test = test(args, model, device, train_graphs, test_graphs, epoch)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> args.filename == <span class="string">&quot;&quot;</span>:</span><br><span class="line">            <span class="keyword">with</span> <span class="built_in">open</span>(args.filename, <span class="string">&#x27;w&#x27;</span>) <span class="keyword">as</span> f:</span><br><span class="line">                f.write(<span class="string">&quot;%f %f %f&quot;</span> % (avg_loss, acc_train, acc_test))</span><br><span class="line">                f.write(<span class="string">&quot;\n&quot;</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;&quot;</span>)</span><br><span class="line"></span><br><span class="line">        <span class="built_in">print</span>(model.eps)</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    main()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="E:\Blog\source\docs\GNN\powerful_gnn\image-20251115110406074.png" alt="Fig. 1. Information for each epoch"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://trachinoid.github.io/2025/11/14/index/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Trachinoid">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
-      <meta itemprop="description" content="Where there is a will, there is a way">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Hexo">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/11/14/index/" class="post-title-link" itemprop="url">Initial File</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-11-14 21:41:06" itemprop="dateCreated datePublished" datetime="2025-11-14T21:41:06+08:00">2025-11-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2025-11-15 10:43:28" itemprop="dateModified" datetime="2025-11-15T10:43:28+08:00">2025-11-15</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
       
     </div>
 
